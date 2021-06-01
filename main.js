@@ -1,35 +1,35 @@
 const prompt = require('prompt-sync')();
 const option = prompt('Combine or deconstruct colors? ');
 
-// r = "red";
-// b = "blue";
-// y = "yellow";
-// o = "orange";
-// g = "green";
-// p = "purple";
-// e = "error";
+r = "red";
+b = "blue";
+y = "yellow";
+o = "orange";
+g = "green";
+p = "purple";
+e = "error";
 
 if (option == "combine") {
     const color1 = prompt('Enter first color ')
     const color2 = prompt('Enter second color ')
 
     if (
-        (color1 === 'yellow' && color2 === 'red') ||
-        (color1 === 'red' && color2 === 'yellow') 
+        (color1 === y && color2 === r) ||
+        (color1 === r && color2 === y) 
     ) {
         console.log(color1, " and ", color2, "Combine to make Orange")
     }
 
     else if (
-        (color1 === 'yellow' && color2 === 'blue') ||
-        (color1 === 'blue' && color2 === 'yellow') 
+        (color1 === y && color2 === b) ||
+        (color1 === b && color2 === y) 
     ) {
         console.log(color1, " and ", color2, "Combine to make Green")
     }
 
     else if (
-        (color1 === 'red' && color2 === 'blue') ||
-        (color1 === 'blue' && color2 === 'red') 
+        (color1 === r && color2 === b) ||
+        (color1 === b && color2 === r) 
     ) {
         console.log("Combine to make Purple")
     }
@@ -43,16 +43,16 @@ if (option == "combine") {
 else if (option == 'deconstruct') {
     const color = prompt('Enter a color to deconstruct')
 
-    if (color == 'purple') {
-        console.log('Purple deconstructs to red + blue')
+    if (color == p) {
+        console.log('Purple deconstructs to red and blue')
     }
 
-    else if (color == 'green') {
-        console.log('Green deconstructs to yellow + blue')
+    else if (color == g) {
+        console.log('Green deconstructs to yellow and blue')
     }
 
-    else if (color == 'orange') {
-        console.log('Orange deconstructs to eyllow + red')
+    else if (color == o) {
+        console.log('Orange deconstructs to yellow and red')
     }
 
     else {
