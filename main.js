@@ -10,8 +10,8 @@ const option = prompt('Combine or deconstruct colors? ');
 // e = "error";
 
 if (option == "combine") {
-    const color1 = prompt('Enter the first color ')
-    const color2 = prompt('Enter the second color ')
+    const color1 = prompt('Enter first color ')
+    const color2 = prompt('Enter second color ')
 
     if (
         (color1 === 'yellow' && color2 === 'red') ||
